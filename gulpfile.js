@@ -18,17 +18,32 @@ function modules() {
   // jQuery files
   let jquery = gulp.src('./node_modules/jquery/dist/*')
     .pipe(gulp.dest('./vendor/jquery'));
-  // Popper.js JS files
-  let popper = gulp.src('./node_modules/popper.js/dist/umd/*')
+  
+  // Popper.js JS file
+  let popper = gulp.src('./node_modules/@popperjs/core/dist/umd/popper.min.js')
     .pipe(gulp.dest('./vendor/popper'));
-  // Bootstrap files
-  let bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
-    .pipe(gulp.dest('./vendor/bootstrap'));
-  // Font Awesome CSS file
-  let fontawesome = gulp.src('./node_modules/@fortawesome/fontawesome-free/**/*')
-    .pipe(gulp.dest('./vendor/fontawesome'));
+  
+  // Bootstrap JS files
+  let bootstrap_js = gulp.src([
+      './node_modules/bootstrap/dist/js/bootstrap.min.js',
+      './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+      ]
+    )
+    .pipe(gulp.dest('./vendor/bootstrap/js'));
+  
+  // Bootstrap SCSS files
+  let bootstrap_scss = gulp.src('./node_modules/bootstrap/scss/**/*')
+    .pipe(gulp.dest('./vendor/bootstrap/scss'));
+  
+  // Font Awesome CSS files
+  let fontawesome_js = gulp.src('./node_modules/@fortawesome/fontawesome-free/css/all.min.css')
+    .pipe(gulp.dest('./vendor/fontawesome/css'));
+  
+  // Font Awesome CSS files
+  let fontawesome_fonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
+    .pipe(gulp.dest('./vendor/fontawesome/webfonts'));
 
-  return merge(jquery, popper, bootstrap, fontawesome);
+  return merge(jquery, popper, bootstrap_js, bootstrap_scss, fontawesome_js, fontawesome_fonts);
 }
 
 

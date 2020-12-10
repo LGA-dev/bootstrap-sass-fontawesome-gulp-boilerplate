@@ -1,6 +1,5 @@
-@import 'variables';
 @import 'custom';
-@import "../../node_modules/bootstrap/scss/bootstrap.scss"; // Bootstrap and its default variables
+@import "../../vendor/bootstrap/scss/bootstrap.scss"; // Bootstrap and its default variables
 
 body {
   display: grid;
@@ -13,5 +12,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid blue;
   }
 }

@@ -20,14 +20,16 @@
   <main>
     <!-- Delete these if you don't need them -->
     <button id="check-jquery-button" class="btn btn-lg btn-primary mb-3" onclick="checkJquery()">Click to see if Jquery is working</button>
-    <button class="btn btn-lg btn-secondary mb-3"  type="button"  data-toggle="popover" data-content="Popper is working! :)">Click to see if Popper is working</button>
-    <button id="check-font-awesome-button" class="btn btn-lg btn-info mb-3" onclick="checkFontAwesome()">Click to see if fontAwesome is working</i></button>
-    <button id="check-bootstrap-button" class="btn btn-lg btn-danger" onclick="checkBootstrap()">Click to see if Bootstrap is working</i></button>
+    <button type="button" class="btn btn-lg btn-secondary mb-3" data-bs-toggle="popover" title="Popover title" data-bs-content="If you see this popover then Popper is working! :)">Click to see if Popper is working</button>
+    <button id="check-font-awesome-button" class="btn btn-lg btn-tertiary mb-3" onclick="checkFontAwesome()">Click to see if fontAwesome is working</i></button>
+    <button id="check-bootstrap-button" class="btn btn-lg btn-quarternary" onclick="checkBootstrap()">Click to see if Bootstrap is working</i></button>
   </main>
   <!-- Bootstrap Javascript files -->
   <script src="/vendor/jquery/jquery.min.js"></script>
   <script src="/vendor/popper/popper.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- (Bootstrap+Popper) -->
+  <!-- <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> --> 
   <!-- Main Javascript files -->
   <script src="src/js/main.js"></script>
 </body>

@@ -1,33 +1,7 @@
-// Override button primary color with my variable
-.btn-primary {
-  background-color: $primary-color !important;
-  border-color: $primary-color !important;
-
-  &:hover {
-    background-color: $primary-color-dark !important;
-    border-color: $primary-color !important;
-  }
-
-  &:active {
-    background-color: $primary-color-light !important;
-    border-color: $primary-color-light !important;
-    color: $dark-color !important;
-  }
-}
-
-// Override button secondary color with my variable
-.btn-secondary {
-  background-color: $secondary-color !important;
-  border-color: $secondary-color !important;
-
-  &:hover {
-    background-color: $secondary-color-dark !important;
-    border-color: $secondary-color !important;
-  }
-
-  &:active {
-    background-color: $secondary-color-light !important;
-    border-color: $secondary-color-light !important;
-    color: $dark-color !important;
-  }
-}
+// Customize default theme colors and create new theme colors
+$theme-colors: (
+  "primary": #24860b,
+  "secondary": #860b44,
+  "tertiary":#0b6d86,
+  "quarternary":#2d177c
+);

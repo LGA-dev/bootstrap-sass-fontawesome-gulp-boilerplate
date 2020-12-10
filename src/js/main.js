@@ -1,9 +1,15 @@
+// import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 // Delete these if you don't need them
 
 // Enable popovers (popovers aren't going to work without this)
-$(function () {
-  $('[data-toggle="popover"]').popover()
+// $(function () {
+//   $('[data-toggle="popover"]').popover()
+// })
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
 })
+
 
 // Check if jquery is working
 function checkJquery() {
@@ -18,7 +24,7 @@ function checkJquery() {
 // Check if fontawesome is working
 function checkFontAwesome() {
   const btn = document.getElementById("check-font-awesome-button");
-  const fa = document.createElement("span");
+  const fa = document.createElement("svg");
 
   fa.className = "fa fa-ambulance";
   fa.style.position = "absolute";
@@ -36,7 +42,7 @@ function checkFontAwesome() {
     } else {
       btn.innerHTML = 'Font Awesome is working <i class="fas fa-smile"></i>';
     }
-    document.body.removeChild(fa);
+    // document.body.removeChild(fa);
   }, 50);
 }
 
