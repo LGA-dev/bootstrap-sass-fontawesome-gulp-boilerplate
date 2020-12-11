@@ -13,9 +13,9 @@
 - browsersync 2.26.13
 - del 6.0.0
 - merge-stream 2.0.0
-- bootstrap 4.5.3
+- bootstrap 5.0.0-beta1
 - jquery 3.5.1
-- popper.js 1.16.1
+- popper.js 2.5.4
 - fontawesome 5.15.1
 
 ## Requirements

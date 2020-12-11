@@ -1,5 +1,5 @@
 @import 'custom';
-@import "../../vendor/bootstrap/scss/bootstrap.scss"; // Bootstrap and its default variables
+@import "../../vendor/bootstrap/scss/bootstrap"; // Include all of Bootstrap
 
 body {
   display: grid;
@@ -12,6 +12,5 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
   }
 }
