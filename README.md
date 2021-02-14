@@ -1,7 +1,4 @@
-# Bootstrap-Sass-FontAwesome Gulp Boilerplate
-
-### A simple boilerplate for front-end projects.
-</br>
+# Bootstrap5-Sass-FontAwesome Gulp Boilerplate
 
 ![Project image](src/assets/images/projectimage.png)
 
@@ -24,10 +21,11 @@
 ## Install
 
 ```
-git clone https://github.com/LGA-dev/bootstrap-sass-fontawesome-gulp-boilerplate.git
-cd bootstrap-sass-fontawesome-gulp-boilerplate
+git clone https://github.com/alstroemerieae/bootstrap5-sass-fontawesome-gulp-boilerplate.git
+cd bootstrap5-sass-fontawesome-gulp-boilerplate
 npm install
-npm start
+npm run start
+npm run watch
 ```
 
 ## Usage
@@ -35,17 +33,19 @@ npm start
 ### There are 2 commands for this boilerplate:
 
 ```
-gulp
+npm run start
 ```
 
->This command will delete the vendor folder, then it will create an empty vendor folder and copy all the third party resources into it. 
+>This command will:
+>* Delete the vendor folder
+>* Create an new empty vendor folder
+>* Copy the third party dependency files from node_modules into the vendor folder
 
->Running ```gulp``` is the same as running ```npm start```.
 
 ```
-gulp watch
+npm run watch
 ```
 
->This command will create a local server and automatically reload the browser if any html/scss/js file changes.
+>This command will create a local server and automatically reload the browser when a change in the html/scss/js files is detected.
 
 >If a change is detected on a scss file, then all scss files will get compiled into a single minified css file.
