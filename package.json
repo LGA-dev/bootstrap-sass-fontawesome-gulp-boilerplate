@@ -1,10 +1,11 @@
 {
-  "name": "bootstrap-sass-fontawesome-gulp-boilerplate",
+  "name": "bootstrap5-sass-fontawesome-gulp-boilerplate",
   "version": "1.0.0",
-  "description": "A boilerplate for front-end projects that includes Gulp 4, Bootstrap 4.5, Sass, FontAwesome 5, BrowserSync and Autoprefixer.",
+  "description": "A boilerplate for front-end projects that includes Gulp 5, Bootstrap 4.5, Sass, FontAwesome 5, BrowserSync and Autoprefixer.",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "watch": "gulp watch"
   },
   "keywords": [],
   "author": "Luciano Alcaraz",
