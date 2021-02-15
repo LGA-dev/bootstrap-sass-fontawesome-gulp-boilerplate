@@ -22,5 +22,5 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Modify bootstrap utility class
 .btn {
-  border-radius: 0!important;
+  border-radius: 1rem !important;
 }

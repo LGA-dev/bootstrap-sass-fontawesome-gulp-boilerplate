@@ -5,12 +5,22 @@ body {
   display: grid;
   transition: all .5s;
   user-select: none;
-  background: linear-gradient(to bottom, rgb(15, 15, 15), rgb(88, 180, 255));
+  background: #eeeeee;
   height: 100vh;
   main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .buttons-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      button {
+        width: 25rem;
+      }
+    }
   }
 }

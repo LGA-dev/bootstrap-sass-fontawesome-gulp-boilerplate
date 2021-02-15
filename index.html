@@ -19,10 +19,12 @@
 <body>
   <main>
     <!-- Delete these if you don't need them -->
-    <button id="check-jquery-button" class="btn btn-lg btn-primary mb-3" onclick="checkJquery()">Click to see if Jquery is working</button>
-    <button type="button" class="btn btn-lg btn-secondary mb-3" data-bs-toggle="popover" title="Popover title" data-bs-content="If you see this popover then Popper is working! :)">Click to see if Popper is working</button>
-    <button id="check-font-awesome-button" class="btn btn-lg btn-tertiary mb-3" onclick="checkFontAwesome()">Click to see if fontAwesome is working</i></button>
-    <button id="check-bootstrap-button" class="btn btn-lg btn-quarternary" onclick="checkBootstrap()">Click to see if Bootstrap is working</i></button>
+    <div class="buttons-container card">
+      <button id="check-jquery-button" class="btn btn-lg btn-primary mb-3" onclick="checkJquery()">Click to see if Jquery is working</button>
+      <button type="button" class="btn btn-lg btn-secondary mb-3" data-bs-toggle="popover" title="Popover title" data-bs-content="If you see this popover then Popper is working! :)">Click to see if Popper is working</button>
+      <button id="check-font-awesome-button" class="btn btn-lg btn-tertiary mb-3" onclick="checkFontAwesome()">Click to see if fontAwesome is working</i></button>
+      <button id="check-bootstrap-button" class="btn btn-lg btn-quarternary" onclick="checkBootstrap()">Click to see if Bootstrap is working</i></button>
+    </div>
   </main>
   <!-- Bootstrap Javascript files -->
   <script src="/vendor/jquery/jquery.min.js"></script>
